@@ -1,0 +1,20 @@
+### 42 Py String Sculptor
+
+Write a function that transforms a string so that the **case of each alphabetical character alternates based on its index**:
+
+- Index 0 → lowercase  
+- Index 1 → uppercase… and so on  
+
+
+#### Prototype
+
+def py_string_sculptor(text: str) -> str:
+
+#Examples
+py_string_sculptor("abc")          # "aBc"
+py_string_sculptor("Hello!")       # "hElLo!"
+py_string_sculptor("Python 42")    # "pYtHoN 42"
+py_string_sculptor("AbC dEf")      # "aBc DeF"
+py_string_sculptor("123abc!")      # "123aBc!"
+py_string_sculptor("")             # "" (empty string)
+

@@ -1,0 +1,28 @@
+Balanced Brackets
+Description
+Write a function that checks whether all brackets in a given string are correctly balanced and properly nested.
+The function must handle the following brackets:
+Parenteeses ()
+Square brackets []
+Curly brackets {}
+
+Any other characters must be ignored.
+Prototype:
+def brackets(text: str) -> bool:
+
+Rules:
+Every opening bracket must be closed by the correct type of bracket.
+
+Brackets must be closed in the correct order.
+
+An empty string is considered valid.
+
+If the string is balanced, return True, otherwise return False.
+
+Examples
+print(brackets("()"))           # True
+print(brackets("({[]})"))    # True
+print(brackets("([)]"))         # False
+brackets("(")            # False
+brackets("abc{[()]}")    # True
+brackets("")             # True

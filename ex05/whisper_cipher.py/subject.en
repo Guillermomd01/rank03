@@ -1,0 +1,29 @@
+Whisper_cipher
+
+Write a function that applies a Caesar cipher to a given string.
+Each alphabetical character must be shifted by a given number while preserving:
+the case (uppercase / lowercase)
+non-alphabetical characters (they must remain unchanged)
+The shift wraps around the alphabet when necessary.
+
+Prototype
+def cipher_shift(text: str, shift: int) -> str:
+
+Rules
+
+Only alphabetical characters (a–z, A–Z) are shifted.
+
+The case of letters must be preserved.
+
+Non-alphabetical characters are not modified.
+
+The shift can be greater than 26.
+
+The function must return the transformed string.
+
+shifts("abc", 2)          # "cde"
+shifts("xyz", 3)          # "abc"
+shifts("Hello", 1)        # "Ifmmp"
+shifts("Hello!", 1)       # "Ifmmp!"
+shifts("ABC", 2)          # "CDE"
+shifts("Python 42", 5)    # "Udymts 42"

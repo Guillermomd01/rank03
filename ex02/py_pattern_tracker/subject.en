@@ -1,0 +1,34 @@
+Assignment name  : py_pattern_tracker
+Expected files   : py_pattern_tracker.py
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function called pattern_tracker that takes a string and returns the
+number of consecutive numeric pairs found in the string.
+
+A numeric pair is defined as two consecutive characters that are both digits
+(from '0' to '9').
+
+- Only consecutive digits are counted.
+- Overlapping pairs must be counted.
+- Non-digit characters break the sequence.
+- If there are no digits or no consecutive digits, the function must return 0.
+
+Function prototype:
+
+def pattern_tracker(text: str) -> int:
+
+Examples:
+
+>>> pattern_tracker("12")
+1
+>>> pattern_tracker("123")
+2
+>>> pattern_tracker("12b3")
+1
+>>> pattern_tracker("a1b23c456")
+4
+>>> pattern_tracker("no digits")
+0
+>>> pattern_tracker("112233")
+5

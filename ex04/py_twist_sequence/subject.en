@@ -1,0 +1,33 @@
+Assignment name  : py_twist_sequence
+Expected files   : py_twist_sequence.py
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function called twist_sequence that takes an array of integers and an
+integer k, and returns a new array where the elements have been rotated by k
+positions.
+
+- The rotation is done to the right.
+- k is always a non-negative integer.
+- If k is 0, the array is returned unchanged.
+- If k is greater than the length of the array, rotation must still work.
+- If the array is empty, return an empty array.
+
+Function prototype:
+
+def twist_sequence(arr: list[int], k: int) -> list[int]:
+
+The function must return the rotated array.
+
+Examples:
+
+>>> twist_sequence([1, 2, 3, 4, 5], 0)
+[1, 2, 3, 4, 5]
+>>> twist_sequence([1, 2, 3, 4, 5], 1)
+[5, 1, 2, 3, 4]
+>>> twist_sequence([1, 2, 3, 4, 5], 2)
+[4, 5, 1, 2, 3]
+>>> twist_sequence([1, 2, 3, 4, 5], 7)
+[4, 5, 1, 2, 3]
+>>> twist_sequence([], 3)
+[]

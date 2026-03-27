@@ -1,0 +1,24 @@
+Matrix Reverse
+
+Description
+
+Write a function that reverses every array (row) in a matrix without modifying the original matrix.
+The function must return a new matrix where each row is reversed, while preserving the original matrix unchanged.
+
+Prototype:
+def matrix_reverse(matrix: list[list[int]]) -> list[list[int]]:
+
+Rules
+The input matrix must not be modified.
+Each row in the matrix must be reversed.
+The order of the rows must remain unchanged.
+An empty matrix is valid.
+The function must return a new matrix.
+
+
+Exemples:
+matrix_reverse([[1,2,3],[4,5,6]]) // return [[3,2,1], [6,5,4]]
+matrix_reverse([[7]]) // return [[7]]
+matrix_reverse([[5,7,8],[4,5,6]]) // return [[8,7,5], [6,5,4]]
+
+

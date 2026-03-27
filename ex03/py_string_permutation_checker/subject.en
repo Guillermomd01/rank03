@@ -1,0 +1,45 @@
+Assignment name  : py_string_permutation_checker
+Expected files   : py_string_permutation_checker.py
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function called string_permutation_checker that checks whether two
+strings are permutations of each other.
+
+Two strings are considered permutations if they contain exactly the same
+characters with the same number of occurrences.
+
+- The comparison is case-sensitive.
+- Spaces are taken into account.
+- All characters (letters, spaces, symbols) must be considered.
+- If the lengths of the two strings are different, they cannot be permutations.
+
+Function prototype:
+
+def string_permutation_checker(s1: str, s2: str) -> bool:
+
+The function must return True if the two strings are permutations of each other,
+otherwise it must return False.
+
+Examples:
+
+>>> string_permutation_checker("a gentleman", "a elegantman")
+False
+>>> string_permutation_checker("listen", "silent")
+True
+>>> string_permutation_checker("triangle", "integral")
+True
+>>> string_permutation_checker("abc", "cab")
+True
+>>> string_permutation_checker("abc", "abcc")
+False
+>>> string_permutation_checker("Hello World", "dlroW olleH")
+True
+>>> string_permutation_checker("Hello", "hello")
+False
+>>> string_permutation_checker("Python", "typhon")
+True
+>>> string_permutation_checker("abc def", "fed cba")
+True
+>>> string_permutation_checker("abc def", "fed cab")
+False
